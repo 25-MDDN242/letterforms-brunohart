@@ -11,7 +11,7 @@ In early April 2025, creativity felt as sluggish as cold coffee. I stared at the
 
 
 <div align="center">
-  ![Lavazza](/Users/brunohart/github-classroom/25-MDDN242/letterforms-brunohart/lavazzaPackaging.jpeg)  
+  ![Lavazza](.assets/lavazzaPackaging.jpeg)  
 </div>
 
 ### April 7, 2025 – Morning Blue Haze
@@ -49,11 +49,11 @@ In mid-April, Sisyphus himself would’ve paused to sip espresso. Between juggli
 > *“Type is the first thing I see… and the last thing I saw before nodding off over this time.”*
 
 <div align="center">
-  ![sketchesNespresso](./Users/brunohart/github-classroom/25-MDDN242/letterforms-brunohart/sketchesOfNespresso.png)  
+  ![sketchesNespresso](.assets/sketchesOfNespresso.png)  
 </div>
 
 <div align="center">
-  ![sketchesNoTwo](./Users/brunohart/github-classroom/25-MDDN242/letterforms-brunohart/sketchesNoTwo.png)  
+  ![sketchesNoTwo](.assets/sketchesNoTwo.png)  
 </div>
 
 ---
@@ -64,7 +64,7 @@ One twilight, while watching William Kentridge’s *My Life as a Coffee Pot* on 
 
 <div align="center">
   <!-- Replace with your Mubi poster screenshot -->
-  ![My Life as a Coffee Pot poster](./Users/brunohart/github-classroom/25-MDDN242/letterforms-brunohart/myLifeAsACoffeePotPoster.jpg)  
+  ![My Life as a Coffee Pot poster](.assets/myLifeAsACoffeePotPoster.jpg)  
   *Kentridge’s blend of film and coffee art ignited my own process.*
 </div>
 
@@ -132,17 +132,17 @@ The letters sometimes spill over the bounding boxes into the other letters and t
 
 <div align="center">
   <!-- Replace with your Mubi poster screenshot -->
-  ![Classico](./Users/brunohart/github-classroom/25-MDDN242/letterforms-brunohart/Classico.png)  
+  ![Classico](.assets/Classico.png)  
 </div>
 
 <div align="center">
   <!-- Replace with your Mubi poster screenshot -->
-  ![Italiano](./Users/brunohart/github-classroom/25-MDDN242/letterforms-brunohart/Italiano.png)  
+  ![Italiano](.assets/Italiano.png)  
 </div>
 
 <div align="center">
   <!-- Replace with your Mubi poster screenshot -->
-  ![Alphabet](./Users/brunohart/github-classroom/25-MDDN242/letterforms-brunohart/Alphabet.png) 
+  ![Alphabet](.assets/Alphabet.png) 
 </div>
 
 ## 🚀 How to Explore
