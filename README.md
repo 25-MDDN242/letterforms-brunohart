@@ -11,7 +11,7 @@ In early April 2025, creativity felt as sluggish as cold coffee. I stared at the
 
 
 <div align="center">
-  ![Lavazza](./Users/brunohart/github-classroom/25-MDDN242/letterforms-brunohart/lavazzaPackaging.jpeg)  
+  ![Lavazza](/Users/brunohart/github-classroom/25-MDDN242/letterforms-brunohart/lavazzaPackaging.jpeg)  
 </div>
 
 ### April 7, 2025 – Morning Blue Haze
