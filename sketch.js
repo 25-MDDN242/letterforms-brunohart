@@ -1,32 +1,48 @@
 const canvasWidth = 960;
 const canvasHeight = 500;
 
-/*
- * my three variable per letter are:
- *
-   size: radius of the second circle (in pixels)
-   offsetx: x offset (in pixels) of the second circle
-            relative to the first one
-   offsety: y offset (in pixels) of the second circle
-            relative to the first one
- *
- */
-
 const letterA = {
-  "size": 80,
+  "cupWidth": 60,
+  "cupHeight": 120,
+  "foamCurve": 20,
+  "spoutAngle": 0,
+  "pourSpeed": 6,
+  "blendFactor": 8,
+  "bloomHeight": 10,
+  "splashOffset": 5,
+  "steamFlow": 10,
+  "rimThickness": 2,
   "offsetx": 0,
-  "offsety": 35
+  "offsety": 0
 }
 
 const letterB = {
-  "size": 150,
+  "cupWidth": 70,
+  "cupHeight": 120,
+  "foamCurve": 15,
+  "spoutAngle": 0,
+  "pourSpeed": 6,
+  "blendFactor": 8,
+  "bloomHeight": 20,
+  "splashOffset": 5,
+  "steamFlow": 10,
+  "rimThickness": 2,
   "offsetx": 0,
-  "offsety": -145
+  "offsety": 0
 }
 
 const letterC = {
-  "size": 100,
-  "offsetx": 30,
+  "cupWidth": 80,
+  "cupHeight": 120,
+  "foamCurve": 30,
+  "spoutAngle": 0,
+  "pourSpeed": 6,
+  "blendFactor": 8,
+  "bloomHeight": 10,
+  "splashOffset": 8,
+  "steamFlow": 10,
+  "rimThickness": 2,
+  "offsetx": 0,
   "offsety": 0
 }
 
@@ -37,43 +53,92 @@ const lightGreen  = "#30dfc4";
 const strokeColor  = "#0a2d27";
 
 function setup () {
-  // create the drawing canvas, save the canvas element
   main_canvas = createCanvas(canvasWidth, canvasHeight);
   main_canvas.parent('canvasContainer');
 
-  // color/stroke setup
   stroke(strokeColor);
   strokeWeight(4);
-
-  // with no animation, redrawing the screen is not necessary
   noLoop();
 }
 
 function draw () {
-  // clear screen
   background(backgroundColor);
 
-  // compute the center of the canvas
   let center_x = canvasWidth / 2;
-  let center_y = canvasHeight / 1.6;
+  let center_y = canvasHeight / 2;
 
-  // draw the letters A, B, C from saved data
   drawLetter(center_x - 250, center_y, letterA);
   drawLetter(center_x      , center_y, letterB);
   drawLetter(center_x + 250, center_y, letterC);
 }
 
 function drawLetter(posx, posy, letterData) {
-  // determine parameters for second circle
-  let size2 = letterData["size"];
-  let pos2x = posx + letterData["offsetx"];
-  let pos2y = posy + letterData["offsety"];
+  // read espresso parameters
+  let cupWidth = letterData["cupWidth"];
+  let cupHeight = letterData["cupHeight"];
+  let foamCurve = letterData["foamCurve"];
+  let pourSpeed = letterData["pourSpeed"];
+  let blendFactor = letterData["blendFactor"];
+  let bloomHeight = letterData["bloomHeight"];
+  let splashOffset = letterData["splashOffset"];
+  let rimThickness = letterData["rimThickness"];
 
-  // draw two circles
-  fill(darkGreen);
-  ellipse(posx, posy, 150, 150);
-  fill(lightGreen);
-  ellipse(pos2x, pos2y, size2, size2);
+  push(); // save current drawing settings
+  translate(posx, posy);
+
+  // Optional rim
+  if (rimThickness > 0) {
+    noFill();
+    strokeWeight(rimThickness);
+    stroke(darkGreen);
+    rectMode(CENTER);
+    rect(0, 0, cupWidth + 40, cupHeight + 40, blendFactor);
+  }
+
+  // Main Letter Style
+  noFill();
+  stroke(strokeColor);
+  strokeWeight(pourSpeed);
+  strokeJoin(ROUND);
+  strokeCap(ROUND);
+
+  // For Letter A
+  if (letterData === letterA) {
+    beginShape();
+    vertex(-cupWidth/2, cupHeight/2);
+    bezierVertex(-cupWidth/2, -foamCurve, -splashOffset, -cupHeight/2, 0, -cupHeight/2);
+    bezierVertex(splashOffset, -cupHeight/2, cupWidth/2, -foamCurve, cupWidth/2, cupHeight/2);
+    endShape();
+
+    let crossbarWidth = cupWidth * 0.5;
+    line(-crossbarWidth/2, bloomHeight, crossbarWidth/2, bloomHeight);
+  }
+
+  // For Letter B
+  else if (letterData === letterB) {
+    // vertical spine
+    line(-cupWidth/2, -cupHeight/2, -cupWidth/2, cupHeight/2);
+    // top curve
+    beginShape();
+    vertex(-cupWidth/2, -cupHeight/2);
+    bezierVertex(cupWidth/4, -cupHeight/2, cupWidth/2, -cupHeight/4, -cupWidth/2, 0);
+    endShape();
+    // bottom curve
+    beginShape();
+    vertex(-cupWidth/2, 0);
+    bezierVertex(cupWidth/4, 0, cupWidth/2, cupHeight/4, -cupWidth/2, cupHeight/2);
+    endShape();
+  }
+
+  // For Letter C
+  else if (letterData === letterC) {
+    beginShape();
+    vertex(cupWidth/2, -cupHeight/2 + foamCurve);
+    bezierVertex(-cupWidth/2, -cupHeight/2 + foamCurve, -cupWidth/2, cupHeight/2 - foamCurve, cupWidth/2, cupHeight/2 - foamCurve);
+    endShape();
+  }
+
+  pop(); // restore settings
 }
 
 function keyTyped() {
