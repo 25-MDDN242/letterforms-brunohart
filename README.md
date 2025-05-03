@@ -43,17 +43,17 @@ In mid-April, Sisyphus himself would’ve paused to sip espresso. Between juggli
 ** I dont have a file on hand of this and I am out on set rn but I will upload tomz morning 
 <div align="center">
   <!-- Replace with your photo of hand-drawn type -->
-  ![Morning pages of hand-drawn type](./assets/handwritten.jpg)  
+  ![Morning pages of hand-drawn type] <img src = "assets/handwritten.jpg">  
 </div>
 
 > *“Type is the first thing I see… and the last thing I saw before nodding off over this time.”*
 
 <div align="center">
-  ![sketchesNespresso](.assets/sketchesOfNespresso.png)  
+  ![sketchesNespresso] <img src ="assets/sketchesOfNespresso.png">  
 </div>
 
 <div align="center">
-  ![sketchesNoTwo](.assets/sketchesNoTwo.png)  
+  ![sketchesNoTwo] <img src = "assets/sketchesNoTwo.png"> 
 </div>
 
 ---
@@ -64,7 +64,7 @@ One twilight, while watching William Kentridge’s *My Life as a Coffee Pot* on 
 
 <div align="center">
   <!-- Replace with your Mubi poster screenshot -->
-  ![My Life as a Coffee Pot poster](.assets/myLifeAsACoffeePotPoster.jpg)  
+  ![My Life as a Coffee Pot poster] <img src = "assets/myLifeAsACoffeePotPoster.jpg" > 
   *Kentridge’s blend of film and coffee art ignited my own process.*
 </div>
 
@@ -132,17 +132,17 @@ The letters sometimes spill over the bounding boxes into the other letters and t
 
 <div align="center">
   <!-- Replace with your Mubi poster screenshot -->
-  ![Classico](.assets/Classico.png)  
+  ![Classico] <img src = "assets/Classico.png">  
 </div>
 
 <div align="center">
   <!-- Replace with your Mubi poster screenshot -->
-  ![Italiano](.assets/Italiano.png)  
+  ![Italiano] <img src = "assets/Italiano.png">
 </div>
 
 <div align="center">
   <!-- Replace with your Mubi poster screenshot -->
-  ![Alphabet](.assets/Alphabet.png) 
+  ![Alphabet] <img src = "assets/Alphabet.png">
 </div>
 
 ## 🚀 How to Explore
