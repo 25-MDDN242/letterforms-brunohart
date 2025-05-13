@@ -43,7 +43,7 @@ In mid-April, Sisyphus himself would’ve paused to sip espresso. Between juggli
 ** I dont have a file on hand of this and I am out on set rn but I will upload tomz morning 
 <div align="center">
   <!-- Replace with your photo of hand-drawn type -->
-  ![Morning pages of hand-drawn type] <img src = "assets/handwritten.jpg">  
+  ![Morning pages of hand-drawn type] <img src = "assets/5855285F-2B9D-4029-A28C-E88A5C01BBA7_1_105_c.jpeg">  
 </div>
 
 > *“Type is the first thing I see… and the last thing I saw before nodding off over this time.”*
