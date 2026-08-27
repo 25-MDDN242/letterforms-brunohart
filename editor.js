@@ -5,9 +5,31 @@
  * ["object_field", minimum_bound, maximum_bound]
  */
 const sliderInfo = [
-  ["size",       0, 100],
-  ["offsetx",  -30,  30],
-  ["offsety", -100, 100]
+  ["pourDistance1x",  -100,  100],
+  ["pourDistance1y",    0,   200],
+  ["cremaFlow1",        0,     2],
+  ["tiltAngle1",      -360,   360],
+  ["foamPeaks1",      -10,    10],
+  ["foamHeight1",    -100,   100],
+  ["milkBody1",         0,   100],
+
+  ["pourDistance2x",  -100,  100],
+  ["pourDistance2y",    0,   200],
+  ["cremaFlow2",        0,     2],
+  ["tiltAngle2",      -360,   360],
+  ["foamPeaks2",      -10,    10],
+  ["foamHeight2",    -100,   100],
+  ["milkBody2",         0,   100],
+
+  ["pourDistance3x",  -100,  100],
+  ["pourDistance3y",    0,   200],
+  ["cremaFlow3",        0,     2],
+  ["tiltAngle3",      -360,   360],
+  ["foamPeaks3",      -10,    10],
+  ["foamHeight3",    -100,   100],
+  ["milkBody3",         0,   100],
+
+  ["brewDigit",         0,     1]
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
@@ -24,7 +46,7 @@ if (typeof systemBackgroundColor === 'undefined') {
 // if everything is defined above, this should just work
 function sliderToDataObject() {
   let obj = {};
-  for (let i=0; i<numSliders; i=i+1) {
+  for (let i=0; i<numSliders; i+=1) {
     o_name = sliderInfo[i][0]
     bounds_low = sliderInfo[i][1]
     bounds_high = sliderInfo[i][2]
